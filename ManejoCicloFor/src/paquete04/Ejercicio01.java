@@ -10,17 +10,27 @@ package paquete04;
  */
 public class Ejercicio01 {
         public static void main(String[] args) {
-            String cadena = "";
-            for (int valor_1 = 30; valor_1 > 10; valor_1--){
-                for (int valor_2 = 60; valor_2 > 10; valor_2 -= 2){
-                    for (int valor_3 = 90; valor_3 > 10; valor_1 -= 3){
-                        for (int valor_4 = 120; valor_4 > 10; valor_1 -=4){
-                            cadena = String.format("%s%d-%d-%d-%d", cadena, valor_1, valor_2, valor_3, valor_4);
-                        }
-                    }
-                }
-            }
-            System.out.println(cadena);
+        int num1;
+        int num2;
+        int num3;
+        int num4;
+        String cadena1 = "";
+       
+        for(num1 = 30; num1 >= 10; num1--){
+           
+            num2 = num1 * 2;
+            num3 = num1 * 3;
+            num4 = num1 * 4;
+           
+                   
+            cadena1 = String.format("%s %d - %d - %d - %d\n",
+                    cadena1, num1, num2, num3, num4);
+               }
+        System.out.printf("%s\n", cadena1);
+                    
+               
+            
+            
 
         }
 }
