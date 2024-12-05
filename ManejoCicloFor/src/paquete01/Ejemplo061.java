@@ -16,7 +16,7 @@ public class Ejemplo061 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        
+       
         int operacion;
         
         for (int contador = 1; contador <= 12; contador++) {
