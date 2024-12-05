@@ -3,34 +3,33 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package paquete04;
+
 import java.util.Locale;
 import java.util.Scanner;
+
 /**
  *
  * @author utpl
  */
 public class Ejercicio03 {
-        public static void main(String[] args) {
-            Scanner entrada = new Scanner(System.in);
-            entrada.useLocale(Locale.US);
-            int contador = 0;
-            double gradosF;
-            double gradosC;
-            String cadena = "";
-       
-            for(gradosF = 20; gradosF <= 100; gradosF += 4){
-                gradosC = (5.0/9.0)*(gradosF - 32);
-                cadena = String.format("%s\nOperación(%d) Fahrenheit: %.2f ===> Celcius: %.2f", cadena, contador, gradosF, gradosC);
-                contador += 1;
-           
-           
-          }
-            System.out.println(cadena);
-        
-                    
-               
-            
-            
 
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+        for (int i = 1; i <= 5; i++) {
+            for (int contador = 1; contador <= i; contador++) {
+
+                System.out.printf("%s", "*");
+            }
+            System.out.println();
         }
+
+        for (int n = 5; n >= 1; n--) {
+            for (int contador_2 = 1; contador_2 <= n; contador_2++) {
+                System.out.printf("%s", "*");
+            }
+            System.out.println();
+        }
+
+    }
 }
